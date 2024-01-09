@@ -1,0 +1,71 @@
+* {
+	margin: 0;
+	letter-spacing: 1pt;
+}
+
+.body {
+	display: grid;
+	grid-template-rows: 3rem 1fr 25%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	padding: .2rem;
+	grid-gap: .6rem;
+	background: rgba(0, 0, 0, .6);
+}
+
+.bodyDiv {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.clockBox {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: .5rem;
+	padding: .2rem;
+}
+
+.labelBox {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	padding: .5rem;
+	background: rgba(0, 0, 0, .3);
+	border-radius: 4pt;
+	background: transparent;
+}
+
+.clock {
+	border: none;
+	font-size: 330%;
+	background: transparent;
+	font-weight: bolder;
+}
+
+.lableText {
+	font-size: 8pt;
+	text-transform: uppercase;
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.actualDate {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	font-size: 9pt;
+	text-transform: capitalize;
+}
+
+.clockName {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 9pt;
+	text-transform: capitalize;
+}
